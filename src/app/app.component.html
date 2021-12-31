@@ -1,0 +1,39 @@
+<div class="entete" align="center">
+    CALCULATRICE REALISER PAR:
+    <h2> TSOBGNI KENFACK KEVIN 18P015 4GI</h2>
+    <hr>
+</div>
+<div class="calculator">
+  
+    <div class="calculator-screen">
+      <div class="operation">{{sequence}}</div>
+      <div class="resultat">{{calcul}}</div>
+    </div>
+    <div class="calculator-keys">
+  
+      <button type="button" class="operator" (click)="add()">+</button>
+      <button type="button" class="operator" (click)="sub()">-</button> 
+      <button type="button" class="operator" (click)="div()">/</button>
+      <button type="button" class="operator" (click)="produit()">*</button>
+  
+      <button type="button" (click)="function('1')">1</button>
+      <button type="button" (click)="function('2')">2</button>
+      <button type="button" (click)="function('3')">3</button>
+      
+      <button type="button" (click)="function('4')">4</button>
+      <button type="button" (click)="function('5')">5</button>
+      <button type="button" (click)="function('6')">6</button>
+
+      <button type="button" (click)="function('7')">7</button>
+      <button type="button" (click)="function('8')">8</button>
+      <button type="button" (click)="function('9')">9</button>          
+  
+      <button type="button" (click)="function('0')">0</button>
+      <button type="button" class="decimal" (click)="decimal()">,</button>
+      <button type="button" class="all-clear" (click)="clear()">AC</button>
+      <button type="button" class="all-clear" (click)="effacer()">DEL</button>
+     
+      <button type="button" (click)="Mem()" value="M">M</button>
+      <button type="button" class="equal-sign" (click)="egal()" value="=">=</button>
+      
+    </div></div>
